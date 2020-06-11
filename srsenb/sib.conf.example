@@ -11,7 +11,7 @@ sib1 =
             si_periodicity = 16;
 
             // comma-separated array of SIB-indexes (from 3 to 13), leave empty or commented to just scheduler sib2
-            si_mapping_info = [ 3 ];
+            si_mapping_info = [ 10 ];
         }
     );
     system_info_value_tag = 0;
@@ -154,3 +154,11 @@ sib7 =
         }
     );
 };
+
+sib10 =
+{
+    msg_id = "00010001 00000010"B;
+    serial_num = "00110000 00000000"B;
+    warning_type = "0580"H;
+    dummy = '';
+}
